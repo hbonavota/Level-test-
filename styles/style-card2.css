@@ -1,0 +1,65 @@
+.card2 {
+  margin-left: 30px;
+}
+
+.card2-title {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #000000;
+  margin-left: 25px;
+  margin-top: 25px;
+}
+
+.card2-container {
+  flex-direction: row;
+  margin-left: 30px;
+}
+
+.icon-gift {
+  position: absolute;
+  width: 35px;
+  height: 35px;
+}
+
+.card2-progress {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-left: 42px;
+  width: 80vh;
+}
+
+.card2-progress-container {
+  position: relative;
+  width: 55%;
+  background: #e5e5e5;
+  height: 15px;
+}
+
+.card2-progress-container::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: #94c11f;
+}
+
+.card2-container-description {
+  width: auto;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.card2-img {
+  width: 70px;
+  height: 70px;
+  align-items: center;
+}
+
+.card-description-container {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+}

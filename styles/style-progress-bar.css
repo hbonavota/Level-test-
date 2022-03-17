@@ -1,0 +1,30 @@
+/* Avoid compatibility issues with progress bar styles */
+
+progress {
+  opacity: 0;
+  overflow: hidden;
+}
+
+.progress-container {
+  position: relative;
+  width: 55%;
+  background: #e5e5e5;
+  height: 15px;
+}
+
+.progress-container::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 39.9%;
+  background: #94c11f;
+}
+
+.progress-price {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-left: 10px;
+}

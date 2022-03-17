@@ -1,0 +1,65 @@
+.card1 {
+  margin-left: 20px;
+  width: 90vh;
+}
+
+.card1-container-header {
+  width: 80%;
+  display: flex;
+}
+
+.icon-gift-left {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  transform: rotate(-20deg);
+  opacity: 0.5;
+}
+
+.card1-progress {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-left: 30px;
+}
+
+.card1-img {
+  width: 130px;
+  height: 130px;
+  align-items: center;
+}
+.card1-container-description {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+}
+
+.card1-description {
+  width: auto;
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  align-items: center;
+  margin-left: 30px;
+}
+
+.card1-description2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: end;
+}
+
+.card1-gesperrt {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+}
+
+.icon-gift-right {
+  margin-left: 20px;
+  width: 50px;
+  height: 50px;
+  transform: rotate(15deg);
+  opacity: 0.5;
+}
