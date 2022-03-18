@@ -5,10 +5,10 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="./styles/style-text.css" type="text/css" media="all" />
-  <link rel="stylesheet" href="./styles/style-card1.css" type="text/css" media="all" />
-  <link rel="stylesheet" href="./styles/style-card2.css" type="text/css" media="all" />
+  <link rel="stylesheet" href="./styles/style-card-desktop.css" type="text/css" media="all" />
+  <link rel="stylesheet" href="./styles/style-card-mobile.css" type="text/css" media="all" />
   <link rel="stylesheet" href="./styles/style-progress-bar.css" type="text/css" media="all" />
+  <link rel="stylesheet" href="./styles/style-text.css" type="text/css" media="all" />
   <title>test-Frontend</title>
 </head>
 
@@ -18,32 +18,43 @@
       <h1 class="title">frontend test task</h1>
     </header>
     <section>
-      <div class="card1">
-        <div class="card1-container-header">
-          <img class="icon-gift-left" src="./SVG/gift-main-cart.svg" alt="icon-gift-left" />
-          <h3 class="card-title">
+      <div class="card">
+        <div class="card-header">
+          <img class="card-header-icon-gift-left" src="./SVG/gift-main-cart.svg" alt="card-header-icon-gift-left" />
+          <h3 class="card-header-title">
             Weiter shoppen und Gratis-Produkt freischalten:
           </h3>
         </div>
-        <div class="card1-progress">
-          <div id="bar1-progress" class="progress-container">
-            <progress max="100"></progress>
+        <div class="card-progress">
+          <img class="card-progress-icon-gift" src="./SVG/gift-main-cart.svg" alt="card-progress-icon-gift" />
+          <div class="wrapper">
+            <div class="progress-bar">
+              <span id="progress-fill" class="progress-bar-fill"></span>
+            </div>
           </div>
-          <div class="progress-price">
-            <p class="price-primary">39,9 &euro;</p>
-            <p class="price">/ 100 &euro;</p>
+          <div class="card-progress-price">
+            <p class="card-progress-price-primary">
+              <span class="card-progress-price-primary-1">100 &euro;</span>
+              <span class="card-progress-price-primary-2">39,9 &euro;</span>
+            </p>
+            <p class="card-progress-total-price">/ 100 &euro;</p>
           </div>
         </div>
-        <div class="card1-description">
-          <img class="card1-img" src="./Screenshots/laneva.jpg" alt="" />
-          <div class="card1-container-description">
-            <p>Laneva Geschenkgutschein 100 Euro</p>
-            <div class="card1-description2">
-              <div class="card1-gesperrt">
+        <div class="card-description">
+          <img class="card-description-img" src="./Screenshots/laneva.jpg" alt="" />
+          <div class="card-description-container">
+            <p class="card-description-container-text1">Laneva Geschenkgutschein 100 Euro</p>
+            <div class="card-description2">
+              <div class="card2-container-description-text">
+                <img src="./SVG/check-main-cart.svg" alt="icon-check" />
+                <h5>Freigeschaltet</h5>
+                <p class="card2-container-description-text">0,00 &euro;</p>
+              </div>
+              <div class="card-gesperrt">
                 <img src="./SVG/lock-key-side-cart.svg" alt="icon-key" />
                 <h5>Gesperrt</h5>
               </div>
-              <div>
+              <div class="card-description2-price">
                 <p class="price-secondary">100 &euro;*</p>
                 <p class="price">0,00 &euro;*</p>
               </div>
@@ -51,48 +62,15 @@
           </div>
           <img class="icon-gift-right" src="./SVG/gift-main-cart.svg" alt="icon-gift-right" />
         </div>
+        <div class="card-description2-moreinfo">
+          <p>Kostenloses Produkt</p>
+          <div class="card2-container-description-date">
+            Lieferung ab 25.02.22
+          </div>
+        </div>
       </div>
     </section>
   </main>
-  <hr />
-  <section>
-    <div class="card2">
-      <h3 class="card2-title">
-        Weiter shoppen und Gratis-Produkt freischalten:
-      </h3>
-      <div class="card2-container">
-        <img class="icon-gift" src="./SVG/gift-main-cart.svg" alt="icon-gift" />
-        <div class="card2-progress">
-          <div id="bar2-progress" class="card2-progress-container">
-            <progress max="100"></progress>
-          </div>
-          <div class="progress-price">
-            <p class="price-primary">100 &euro;</p>
-            <p class="price">/ 100 &euro;</p>
-          </div>
-        </div>
-        <div class="card2-container-description">
-          <img class="card2-img" src="./Screenshots/laneva.jpg" alt="card2-img" />
-          <div class="card2-container-description-text">
-            <h4>Laneva Geschenkgutschein 100 Euro</h4>
-            <p>Kostenloses Produkt</p>
-            <div class="card2-container-description-date">
-              Lieferung ab 25.02.22
-            </div>
-          </div>
-          <div class="card2-container-description-text">
-            <img src="./SVG/check-main-cart.svg" alt="icon-check" />
-          </div>
-          <h5>Freigeschaltet</h5>
-          <p class="card2-container-description-text">0,00 &euro;</p>
-          <div class="card2-container-description-text">
-            <p class="price-secondary">100 &euro;*</p>
-            <p class="price">0,00 &euro;*</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
 </body>
 
 </html>

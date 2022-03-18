@@ -1,46 +1,36 @@
+body {
+  font-family: "Arial", Helvetica, sans-serif;
+}
+
 .title {
   text-align: left;
   text-transform: uppercase;
   color: rgb(44, 173, 248);
   font-size: 20px;
-  font-family: Arial, Helvetica, sans-serif;
+
   margin-bottom: 50px;
 }
 
-.card-title {
-  font-family: Arial, Helvetica, sans-serif;
+.card-header-title {
   color: #000000;
   margin-left: 25px;
   margin-top: 25px;
 }
 
-.price {
+.card-progress-total-price {
   color: black;
   font-size: 16px;
   font-weight: 600;
 }
 
-.price-primary {
+.card-progress-price-primary {
   color: #94c11f;
   font-weight: 600;
+  margin-right: 5px;
 }
 
 .price-secondary {
   color: red;
   font-weight: 600;
   text-decoration: line-through;
-}
-
-.card2-container-description-date {
-  color: black;
-  font-weight: 600;
-  background-color: #94c11f;
-  padding: 5px;
-  border-radius: 4px;
-  width: fit-content;
-}
-
-.card2-container-description-text {
-  margin-left: 8vh;
-  /* font-weight: 600; */
 }

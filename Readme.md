@@ -1,6 +1,6 @@
 # Frontend Test Task
 
-## main file
+## Main file
 
 + index.html
 
@@ -8,20 +8,33 @@
 
 + styles /
 
-## Information To Change Bar Progress (Javascript)
-+ To change the progress bar you must access the 'Id' and then the ::before as follows
+
+# UPDATE
+
+## Information To Change Bar Progress
+
++ To change the progress bar you must access the "progress-bar-fill" class or the id = "progress-fill" and modify the width property of it.
+
++ Example:
+____
+```
+.progress-bar-fill {
+  width: 75%;
+} 
+
+Or
+
+#progress-fill {
+width: 75%;
+}
+```
+
++ Or inline-style ( take in the span id="progress-fill" and modify the style inline )
 
 ```
-window.getComputedStyle(document.querySelector('#bar1-progress', '::before'));
-
-window.getComputedStyle(document.querySelector('#bar2-progress', '::before'));
-```
-+ after use the property
-
+<span id="progress-fill" class="progress-bar-fill" style= width:75%></span>
 
 ```
 
-getPropertyValue('width') // to access
-
-setPropertyvalue('width','newValue') // to change
-```
+### Important: 
++ Hardcoding was used to display the two positions that the progress bar has (39.9% and 100%) with their respective "span" and added to the media queries for sample purposes only..

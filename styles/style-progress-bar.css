@@ -1,28 +1,43 @@
-/* Avoid compatibility issues with progress bar styles */
+/* We do not use the <progress> tag to avoid incompatibilities */
 
-progress {
-  opacity: 0;
-  overflow: hidden;
+
+@media only screen and (max-width: 600px) {
+  /* Hardcoding was used to display the two positions that the progress bar has (39.9% and 100%) 
+  and were added to the media queries for sample purposes only. */
+  .progress-bar-fill {
+    width: 100%;
+  }
+  .card-progress-price-primary-2 {
+    display: none;
+  }
+
 }
 
-.progress-container {
-  position: relative;
-  width: 55%;
+@media only screen and (min-width: 601px) {
+  .progress-bar-fill {
+    width: 39.9%;
+  }
+  .card-progress-price-primary-1 {
+    display: none;
+  }
+}
+
+.wrapper {
+  width: 50vh;
+}
+
+.progress-bar {
+  width: 100%;
   background: #e5e5e5;
-  height: 15px;
 }
 
-.progress-container::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 39.9%;
+.progress-bar-fill {
+  display: block;
+  height: 13px;
   background: #94c11f;
 }
 
-.progress-price {
+.card-progress-price {
   display: flex;
   flex-direction: row;
   align-items: center;

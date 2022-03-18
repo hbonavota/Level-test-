@@ -1,0 +1,92 @@
+/* When the screen of the used device is less than 601px */
+
+@media only screen and (max-width: 601px) {
+  .card-header-icon-gift-left {
+    width: 35px;
+  }
+
+  .card {
+    margin-left: 30px;
+  }
+
+  .card-progress {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-left: 22px;
+    width: 80vh;
+  }
+
+  .card-progress-icon-gift {
+    width: 30px;
+    height: 30px;
+    margin-right: 4px;
+    margin-bottom: 10px;
+  }
+
+  .card-description {
+    width: auto;
+    display: flex;
+    margin-left: 25px;
+  }
+
+  .card-description-img {
+    width: 70px;
+    height: 70px;
+    align-items: center;
+  }
+
+  .card-description-container {
+    display: flex;
+  }
+
+  .card-description2 {
+    display: flex;
+  }
+
+  .card-description-container-text1{
+    font-weight: bold;
+    font-size:12px;
+    width:160px;
+    margin-left: 20px;
+  }
+
+  .card-gesperrt {
+    display: none;
+  }
+  
+  .card-description2-price {
+    margin-left:20px;
+  }
+
+  .card2-container-description-text {
+    display: flex;
+    align-items: baseline;
+    margin-left: 10px;
+  }
+  .card2-container-description-text img{
+    width:20px;
+    height:20px;
+  }
+
+  .card-description2-moreinfo {
+    margin-top: -40px;
+    margin-left: 115px;
+  }
+
+  .card2-container-description-date {
+    color: black;
+    font-weight: 600;
+    background-color: #94c11f;
+    padding: 5px;
+    border-radius: 4px;
+    width: fit-content;
+  }
+
+  .icon-gift-right {
+    display: none;
+  }
+  .card-header-icon-gift-left {
+    display: none;
+  }
+}
